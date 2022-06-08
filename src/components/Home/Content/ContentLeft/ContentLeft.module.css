@@ -1,0 +1,191 @@
+/* SECTION LEFT */
+.home_text_container {
+    margin: 25px 15px 35px 15px;
+    text-align: justify;
+}
+
+.home_content_left_art_card,
+.home_content_left_community_card {
+    text-align: center;
+    overflow: hidden;
+    margin-bottom: 8px;
+    background-color: #fff;
+    border-radius: 5px;
+    transition: box-shadow 0.3s;
+    position: relative;
+    border: none;
+    box-shadow: 0 0 1px rgb(0 0 0 /15%), 0 0 0 rgb(0 0 0/20%);
+}
+
+.home_content_left_user_info {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+    padding: 12px 12px 16px;
+    word-break: break-word;
+}
+
+.home_content_left_card_bg {
+    height: 70px;
+    margin: -12px -12px 0;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.home_content_left_card_photo {
+    box-shadow: none;
+    width: 60px;
+    height: 60px;
+    border: 2px solid white;
+    margin: -25px auto 12px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.home_content_left_card_link {
+    font-size: 16px;
+    line-height: 1.5;
+    color: rgba(0, 0, 0, 0.9);
+    font-weight: 600;
+}
+
+.home_content_left_description {
+    margin: 0;
+    font-size: 12px;
+    font-weight: 450;
+}
+
+.home_content_left_card_add_photo {
+    color: #0a66c2;
+    margin-top: 4px;
+    font-size: 14px;
+    line-height: 1.33;
+    font-weight: 400;
+}
+
+.home_content_left_card_widget {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.home_content_left_card_widget .home_content_left_widget_link {
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px 12px;
+    transition: all .3s;
+}
+
+.viewed_quantity {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.home_content_left_widget_link:hover {
+    background-color: rgba(0, 0, 0, 0.08);
+    cursor: pointer;
+}
+
+.home_content_left_premium {
+    display: flex;
+    flex-direction: column;
+    color: rgba(0, 0, 0, 0.6);
+    text-align: left;
+    padding: 4px 12px;
+    font-size: 14px;
+    transition: all .3s;
+}
+
+.home_content_left_premium:hover {
+    background-color: rgba(0, 0, 0, 0.08);
+    cursor: pointer;
+}
+
+.home_content_left_card_widget .home_content_left_widget_text {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.home_content_left_card_widget .home_content_left_widget_text span {
+    font-size: 14px;
+    line-height: 1.333;
+}
+
+.home_content_left_card_widget .home_content_left_widget_text span:first-child {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.home_content_left_card_widget .home_content_left_widget_text span:nth-child(2) {
+    color: rgba(0, 0, 0, 1);
+}
+
+.home_content_left_card_item {
+    border-color: rgba(0, 0, 0, 0.8);
+    text-align: left;
+    padding: 12px;
+    font-size: 14px;
+    display: block;
+    transition: all .3s;
+}
+
+.home_content_left_card_item span {
+    display: flex;
+    align-items: center;
+    color: rgba(0, 0, 0, 1);
+}
+
+.home_content_left_card_item:hover {
+    background-color: rgba(0, 0, 0, 0.08);
+}
+
+.home_content_left_community_card {
+    padding: 8px 0 0;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+
+.home_content_left_community_card a {
+    color: #000;
+    padding: 4px 12px 4px 12px;
+    font-size: 14px;
+    transition: all .3s;
+}
+
+.home_content_left_community_card a:hover {
+    color: #0a66c2;
+}
+
+.home_content_left_community_card span {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.home_content_left_community_card a:last-child {
+    color: rgba(0, 0, 0, 0.6);
+    text-decoration: none;
+    border-top: 1px solid #d6cec2;
+    padding: 12px;
+    transition: all .3s;
+}
+
+.home_content_left_community_card a:last-child:hover {
+    background-color: rgba(0, 0, 0, 0.08);
+}
+
+.content_left_bottom_plus_icon {
+    display: block;
+    padding: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: all .3s;
+}
+
+.content_left_bottom_plus_icon:hover {
+    background-color: rgba(0, 0, 0, 0.08);
+}

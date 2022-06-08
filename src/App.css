@@ -1,38 +1,203 @@
-.App {
-  text-align: center;
+ul li {
+  list-style: none !important;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+a {
+  text-decoration: none !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.ps_relative {
+  position: relative !important;
+}
+
+.text_bold {
+  font-weight: bold !important;
+}
+
+.text_underline {
+  text-decoration: underline !important;
+}
+
+.flex_center {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+.flex_column {
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+.flex_row {
+  display: flex !important;
+  flex-direction: row !important;
+}
+
+.text_center {
+  text-align: center !important;
+}
+
+.margin-0 {
+  margin: 0 !important;
+}
+
+
+/* NAVBAR HOME */
+.home_custom .nav-item.active {
+  border-bottom: 3px solid #000 !important;
+}
+
+.home_custom .nav-item.active .header_home_right_item_custom {
+  color: #000 !important;
+}
+
+.home_custom .nav-item {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-start !important;
+}
+
+.home_custom .dropdown-menu {
+  left: inherit !important;
+  right: 0 !important;
+  width: 100% !important;
+}
+
+.home_custom .form-inline .form-control {
+  min-width: 200px !important;
+  border: none !important;
+  outline: none !important;
+}
+
+.home_custom .dropdown-menu.show {
+  min-width: 200px !important;
+}
+
+/* REACT SLICK */
+.content_right_banner_card .slick-next {
+  margin-right: 33px !important;
+}
+
+.content_right_banner_card .slick-prev {
+  margin-left: 33px !important;
+  z-index: 2;
+}
+
+.content_right_banner_card .slick-dots {
+  bottom: 10px !important;
+}
+
+.content_right_banner_card .slick-dots li button:before {
+  color: rgba(0, 0, 0, 0.9) !important;
+}
+
+.content_right_banner_card .slick-dots li.slick-active button:before {
+  color: #0078d4 !important;
+}
+
+/* SLIDER IMAGE VIEW POST */
+
+.view_image_content .slick-next,
+.post_detail_right_top .slick-next {
+  right: 8px !important;
+}
+
+.view_image_content .slick-prev,
+.post_detail_right_top .slick-prev {
+  left: 8px !important;
+  z-index: 10;
+}
+
+.post_detail_right_top .slick-prev {
+  z-index: 8;
+}
+
+.view_image_content .slick-prev:before,
+.view_image_content .slick-next:before {
+  font-size: 27px !important;
+}
+
+/* MENTIONS PEOPLE */
+.mentions__mention,
+.hashtags__hashtag {
+  background-color: #0077d3 !important;
+}
+
+/* LOADER */
+.loader {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  position: relative;
+  animation: rotate 1s linear infinite
+}
+
+.loader::before {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  inset: 0px;
+  border-radius: 50%;
+  border: 5px solid #fff;
+  animation: prixClipFix 2s linear infinite;
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg)
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@keyframes prixClipFix {
+  0% {
+    clip-path: polygon(50% 50%, 0 0, 0 0, 0 0, 0 0, 0 0)
   }
-  to {
-    transform: rotate(360deg);
+
+  25% {
+    clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 0, 100% 0, 100% 0)
+  }
+
+  50% {
+    clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 100%, 100% 100%, 100% 100%)
+  }
+
+  75% {
+    clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 100%, 0 100%, 0 100%)
+  }
+
+  100% {
+    clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 100%, 0 100%, 0 0)
+  }
+}
+
+/* PC */
+@media (min-width: 64em) {}
+
+/* IPAD Pro */
+@media (max-width: 64em) {}
+
+/* TABLET & MOBILE */
+@media (max-width: 63.9375em) {}
+
+/* TABLET */
+@media (min-width: 46.25em) and (max-width: 63.9375em) {
+  .home_custom .form-inline {
+    width: 70% !important;
+  }
+
+  .home_custom .form-inline .form-control {
+    width: 100% !important;
+  }
+
+  .home_custom .dropdown-menu {
+    top: -100% !important;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 46.25em) {
+  .home_custom .form-inline {
+    width: 100% !important;
   }
 }

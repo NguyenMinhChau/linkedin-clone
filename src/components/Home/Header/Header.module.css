@@ -1,0 +1,115 @@
+.header_home_logo {
+    width: 50px;
+    height: 50px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
+
+.header_home_icon_search {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    padding: 7px 14px;
+}
+
+.header_home_icon_search:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.header_home_divider {
+    height: 100%;
+    margin: 0 15px;
+    border-right: 2px solid #ccc;
+}
+
+/* LISTS SEARCH */
+.header_left_form_container {
+    position: relative;
+}
+
+.header_left_list_search {
+    position: absolute;
+    top: 115%;
+    left: 0;
+    right: -100px;
+    width: 32vw;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    padding: 8px 0;
+    display: none;
+    z-index: 10;
+}
+
+.header_left_form_container:focus-within .header_left_list_search {
+    display: block;
+}
+
+.header_left_form_container:focus-within .header_left_input_search {
+    width: 320px;
+}
+
+.header_left_item_search {
+    width: 100%;
+    padding: 8px 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: transparent;
+}
+
+.header_left_item_search:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+/* PC */
+@media (min-width: 64em) {}
+
+/* IPAD Pro */
+@media (max-width: 64em) {}
+
+/* TABLET & MOBILE */
+@media (max-width: 63.9375em) {
+
+    .header_home_divider,
+    .header_home_mobile::-webkit-scrollbar {
+        display: none;
+    }
+
+    .header_home_mobile {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        overflow-x: auto;
+        width: 100%;
+        justify-content: space-between;
+        z-index: 10;
+    }
+}
+
+/* TABLET */
+@media (min-width: 46.25em) and (max-width: 63.9375em) {
+    .header_left_form_container:focus-within .header_left_input_search {
+        min-width: 40vw !important;
+    }
+
+    .header_left_list_search {
+        width: 45vw;
+    }
+}
+
+/* MOBILE */
+@media (max-width: 46.25em) {
+    .header_left_form_container:focus-within .header_left_input_search {
+        width: 70vw;
+    }
+
+    .header_left_list_search {
+        width: 76vw;
+    }
+}

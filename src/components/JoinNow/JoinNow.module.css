@@ -1,0 +1,254 @@
+.join_now {
+    padding: 20px 20px 0 20px;
+}
+
+.join_now_logo img {
+    width: 135px;
+    height: 34px;
+    object-fit: contain;
+}
+
+.join_now_form {
+    width: 35%;
+    min-height: 120px;
+    border-radius: 12px;
+    background-color: #fff;
+    padding: 25px;
+}
+
+.join_now_description {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.join_now_description a {
+    font-weight: 500;
+}
+
+.join_now_button_join {
+    width: 100%;
+    padding: 12px;
+    background-color: #338ce6;
+    border: none !important;
+    outline: none !important;
+    color: white;
+    font-size: 17px;
+    font-weight: 500;
+    border-radius: 25px;
+    transition: all .3s;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.join_now_button_join:hover {
+    background-color: #004182;
+    cursor: pointer;
+}
+
+.join_now_divider {
+    width: 100%;
+    height: 2px;
+    border-top: 2px solid #ccc;
+    margin-top: 40px;
+    position: relative;
+}
+
+.join_now_or {
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    padding: 5px 12px;
+}
+
+.join_now_button_join_google {
+    background-color: white;
+    color: rgba(0, 0, 0, 0.6);
+    border: 1px solid #ccc;
+    margin-top: 15px;
+}
+
+.join_now_button_join_google:hover {
+    background-color: rgba(0, 0, 0, 0.08);
+    cursor: pointer;
+}
+
+.join_now_button_join_google span img {
+    width: 22px;
+    height: 22px;
+    object-fit: contain;
+}
+
+.join_now_signin {
+    margin: 0;
+    margin-top: 30px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.join_now_email_signin {
+    font-weight: bold;
+    color: #0077d3;
+}
+
+.join_now_email_signin:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.join_now_gethelp {
+    margin: 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.join_now_footer {
+    width: 100%;
+    background-color: white;
+    height: 80px;
+}
+
+.join_now_footer_logo {
+    width: 54px;
+    height: 14px;
+    object-fit: contain;
+}
+
+.join_now_footer_item {
+    padding: 12px 6px;
+}
+
+.join_now_footer_item a {
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.6);
+    font-weight: 500;
+}
+
+.join_now_footer_item a:hover {
+    text-decoration: underline !important;
+}
+
+.label_text {
+    font-size: 14px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.6);
+    font-style: italic !important;
+}
+
+.input_text {
+    font-weight: 490;
+    color: rgba(0, 0, 0, 0.7) !important;
+}
+
+.error {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.loader {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader i {
+    font-size: 40px;
+}
+
+.join_now_form_password {
+    position: relative;
+}
+
+.eye_password {
+    position: absolute;
+    top: 60%;
+    right: 12px;
+}
+
+.eye_password:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.eye_password i {
+    font-size: 20px;
+}
+
+.upload_container {
+    text-align: center;
+}
+
+.label_upload {
+    width: 100%;
+}
+
+.choses_avatar {
+    width: 100%;
+    padding: 8px 12px;
+    border-radius: 5px;
+    background-color: transparent;
+    border: none !important;
+    outline: none !important;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    font-weight: bold;
+    color: #ccc;
+    font-style: italic;
+    font-size: 14px;
+}
+
+.image_avatar {
+    width: 100%;
+    height: 200px;
+}
+
+.image_avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 5px;
+}
+
+
+/* PC */
+@media (min-width: 64em) {}
+
+/* IPAD Pro */
+@media (max-width: 64em) {
+    .join_now_footer {
+        height: 0;
+        overflow: hidden;
+    }
+}
+
+/* TABLET & MOBILE */
+@media (max-width: 63.9375em) {
+    .join_now_footer {
+        height: 0;
+        overflow: hidden;
+    }
+}
+
+/* TABLET */
+@media (min-width: 46.25em) and (max-width: 63.9375em) {
+    .join_now_form {
+        width: 90%;
+    }
+}
+
+/* MOBILE */
+@media (max-width: 46.25em) {
+    .join_now_form {
+        width: 100%;
+    }
+}
+
+@media (min-width: 1024px) and (max-width:1145px) {
+    .join_now_form {
+        width: 60%;
+    }
+}

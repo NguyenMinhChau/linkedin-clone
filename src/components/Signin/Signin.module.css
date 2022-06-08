@@ -1,0 +1,151 @@
+.signin {
+    width: 100vw;
+    height: 100vh;
+}
+
+.signin_logo {
+    width: 84px;
+    height: 21px;
+    object-fit: cover;
+    margin: 32px 24px;
+}
+
+.signin_description {
+    font-size: 16px;
+    line-height: 1.5;
+    color: rgba(0, 0, 0, 0.6);
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+.signin_list_account {
+    border: 1px solid #ccc;
+    width: 50%;
+}
+
+.signin div ul li {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    padding: 12px;
+    transition: all 0.3s ease;
+}
+
+.signin div ul li:not(:first-child) {
+    border-top: 1px solid #ccc;
+}
+
+.signin div ul li:hover {
+    cursor: pointer;
+    background-color: rgb(225, 225, 225);
+}
+
+.signin_info_account {
+    display: flex;
+    align-items: center;
+}
+
+.signin_avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.signin_info_account_name_email {
+    margin-left: 12px;
+}
+
+.signin_name {
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+.signin_email {
+    margin: 0;
+    font-size: 12px;
+}
+
+.signin_elipsis {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    background-color: transparent;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .3s;
+    color: rgb(144, 144, 144);
+}
+
+.signin_elipsis:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.signin_new_linkedin {
+    font-size: 18px;
+    margin-top: 15px;
+}
+
+.signin_footer {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: white;
+    height: 80px;
+}
+
+.signin_footer_logo {
+    width: 54px;
+    height: 14px;
+    object-fit: contain;
+}
+
+.signin_footer_item {
+    padding: 12px 6px;
+}
+
+.signin_footer_item a {
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.6);
+    font-weight: 500;
+}
+
+.signin_footer_item a:hover {
+    text-decoration: underline !important;
+}
+
+/* PC */
+@media (min-width: 64em) {}
+
+/* IPAD Pro */
+@media (max-width: 64em) {}
+
+/* TABLET & MOBILE */
+@media (max-width: 63.9375em) {
+    .signin_footer {
+        height: 0;
+        overflow: hidden;
+    }
+}
+
+/* TABLET */
+@media (min-width: 46.25em) and (max-width: 63.9375em) {
+    .signin_list_account {
+        width: 70%;
+    }
+}
+
+/* MOBILE */
+@media (max-width: 46.25em) {
+    .signin_list_account {
+        width: 100%;
+    }
+}
