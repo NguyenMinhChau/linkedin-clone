@@ -114,7 +114,7 @@ function EmbedDetail() {
                                 >
                                     <div
                                         className={`${clsx(
-                                            styles.bg_image_content
+                                            styles.embed_bg_image_content
                                         )}`}
                                         style={{
                                             backgroundImage: `url(${image})`,

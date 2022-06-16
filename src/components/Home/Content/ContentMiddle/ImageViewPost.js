@@ -8,7 +8,6 @@ function ImageViewPost({
     article,
     currentImage,
 }) {
-    console.log(currentImage);
     const settings = {
         infinite: true,
         speed: 500,

@@ -25,7 +25,6 @@ export function useUserHook() {
     const user = useSelector((state) => state.user);
     return user.user;
 }
-
 // Lấy thông tin bài viết
 export function usePostHook() {
     const post = useSelector((state) => state.post);

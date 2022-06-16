@@ -86,7 +86,7 @@
 
 .comment_emoji_container {
     position: absolute !important;
-    top: -362px !important;
+    bottom: -362px !important;
     right: 0 !important;
     animation: fadeOut .3s linear;
     z-index: 999;
